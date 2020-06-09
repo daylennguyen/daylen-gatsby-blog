@@ -2,7 +2,7 @@
   "url": "https://daylennguyen.github.io",
   "meta": {
     "favicon": "https://i.imgur.com/Rm6rVSL.jpg",
-    "keyword": "daylen, blog, JavaScript",
+    "keyword": "Daylen, Blog, JavaScript",
     "description": "Daylen's Blog | Browse content for coders, photographers and people!",
     "theme_color": "#384f7c",
     "google_site_verification": "riZBcestky7i9xY__A-5J-2EE65T75X1u-zgbss37Io"
@@ -19,7 +19,7 @@
   "gitalk": {
     "repo": "daylennguyen.github.io",
     "admin": ["daylen"],
-    "owner": "calpa",
+    "owner": "daylen",
     "clientID": "716049d016bcef894225",
     "clientSecret": "32d5fe98987a84d91e9d1cdc56c2ff77ae5ca8c1",
     "pagerDirection": "first",
