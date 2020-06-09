@@ -22,12 +22,12 @@ const {
 const Icon = ({ href, icon }) => (
   <a
     target="_blank"
-    href={href}
+    href={ href }
     rel="external nofollow noopener noreferrer"
     className="custom-icon"
   >
     <span className="fa-layers fa-fw fa-2x">
-      <FontAwesomeIcon icon={icon} />
+      <FontAwesomeIcon icon={ icon } />
     </span>
   </a>
 );
@@ -35,25 +35,21 @@ const Icon = ({ href, icon }) => (
 const Sidebar = ({ totalCount, latestPosts }) => (
   <header className="intro-header site-heading text-center col-xl-2 col-lg-3 col-xs-12 order-lg-1">
     <div className="about-me">
-      <Link to={about} href={about} className="name">
-        <img className="avatar" src={iconUrl} alt="Calpa" />
-        <h4>Calpa</h4>
+      <Link to={ about } href={ about } className="name">
+        <img className="avatar" src={ iconUrl } alt="Calpa" />
+        <h4>Daylen</h4>
       </Link>
-      <p className="mb-1">{wordings[0]}</p>
-      <p className="mb-3">{wordings[1]}</p>
+      <p className="mb-1">{ wordings[0] }</p>
+      <p className="mb-3">{ wordings[1] }</p>
       <Icon
-        href={`https://www.zhihu.com/people/${zhihuUsername}`}
-        icon={['fab', 'zhihu']}
+        href={ `https://github.com/${githubUsername}` }
+        icon={ ['fab', 'github'] }
       />
-      <Icon
-        href={`https://github.com/${githubUsername}`}
-        icon={['fab', 'github']}
-      />
-      <Icon href={`mailto:${email}`} icon={['far', 'envelope']} />
-      {facebook
-        && <Icon href={`https://www.facebook.com/${facebook}/`} icon={['fab', 'facebook']} />
+      <Icon href={ `mailto:${email}` } icon={ ['far', 'envelope'] } />
+      { facebook
+        && <Icon href={ `https://www.facebook.com/${facebook}/` } icon={ ['fab', 'facebook'] } />
       }
-      <Information totalCount={totalCount} posts={latestPosts} />
+      <Information totalCount={ totalCount } posts={ latestPosts } />
     </div>
   </header>
 );
@@ -75,7 +71,7 @@ Sidebar.defaultProps = {
 
 export default () => (
   <StaticQuery
-    query={graphql`
+    query={ graphql`
       fragment cardData on MarkdownRemark {
         fields {
           slug
@@ -108,6 +104,26 @@ export default () => (
         }
       }
     `}
-    render={data => <Sidebar {...data.all} {...data.limited} />}
+    render={ data => <Sidebar { ...data.all } { ...data.limited } /> }
   />
 );
+
+
+// console.log(graphql`
+// query SidebarQuery {
+//   all: allMarkdownRemark {
+//     totalCount
+//   }
+
+//   limited: allMarkdownRemark(
+//     sort: { order: DESC, fields: frontmatter___date }
+//     limit: 6
+//   ) {
+//     latestPosts: edges {
+//       node {
+//         ...cardData
+//       }
+//     }
+//   }
+// }
+// `);

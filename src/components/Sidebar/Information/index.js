@@ -11,14 +11,13 @@ const Information = ({ totalCount, posts }) => (
   <div className="d-none d-lg-block information my-2">
     <hr />
     <p>
-      共&nbsp;
       {totalCount}
-      &nbsp;篇文章
+      &nbsp;Posts
     </p>
     <hr />
     <LatestPost posts={posts} />
-    <hr />
-    <Friend />
+    {/* <hr /> */}
+    {/* <Friend /> */}
   </div>
 );
 

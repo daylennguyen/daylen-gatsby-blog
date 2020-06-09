@@ -1,10 +1,11 @@
+// https://www.gatsbyjs.org/docs/gatsby-config/
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    title: 'Calpa&apos;s Blog',
-    description: 'Front End Technical Blog - Calpa',
-    siteUrl: 'https://calpa.me',
-    author: 'Calpa',
+    title: 'Daylen\'s blog',
+    description: 'Daylen Nguyen\'s blog',
+    siteUrl: 'https://daylennguyen.github.io',
+    author: 'Daylen',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

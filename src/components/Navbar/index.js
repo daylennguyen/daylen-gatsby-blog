@@ -33,7 +33,7 @@ const Navbar = () => (
           gotoPage('/');
         }}
       >
-        <span className="brand-logo">Calpa</span>
+        <span className="brand-logo">Daylen</span>
         &apos;s Blog
       </button>
       <button
@@ -44,6 +44,7 @@ const Navbar = () => (
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
+      {/* TODO: CHANGE TO PERSONAL GITHUB  */}
       <GithubCorner url="https://github.com/calpa/gatsby-starter-calpa-blog" />
       <div
         className="collapse navbar-collapse flex-row-reverse"

@@ -35,7 +35,7 @@ const Page = ({ pageContext, location }) => {
   const {
     group, index, first, last, pathPrefix,
   } = pageContext;
-
+  // console.log(location)
   const previousUrl = index - 1 === 1 ? '' : `/${pathPrefix}/${index - 1}`;
   const nextUrl = `/${pathPrefix}/${index + 1}`;
 
@@ -70,7 +70,7 @@ const Page = ({ pageContext, location }) => {
         </div>
         <div className="col-xl-2 col-lg-1 order-3" />
       </div>
-      <ShareBox url={location.href} hasCommentBox={false} />
+      {/* <ShareBox url={location.href} hasCommentBox={false} /> */}
     </React.Fragment>
   );
 };

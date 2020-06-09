@@ -1,14 +1,13 @@
 /* eslint-disable import/prefer-default-export */
-import ReactGA from 'react-ga';
+// https://www.gatsbyjs.org/docs/browser-apis/
+import ReactGA from 'react-ga'; // google analytics
 import { config } from './data';
 
 import installFontAwesome from './src/api/installFontAwesome';
 
 import 'prismjs/themes/prism-solarizedlight.css';
 
-const {
-  url, gaTrackId, gaOptimizeId,
-} = config;
+const { url, gaTrackId, gaOptimizeId } = config;
 
 installFontAwesome();
 
