@@ -17,11 +17,11 @@
   },
   "title": "Daylen | Photography, Code, People",
   "gitalk": {
-    "repo": "calpa.github.io",
-    "admin": ["calpa"],
+    "repo": "daylennguyen.github.io",
+    "admin": ["daylen"],
     "owner": "calpa",
-    "clientID": "18255f031b5e11edd98a",
-    "clientSecret": "2ff6331da9e53f9a91bcc991d38d550c85026714",
+    "clientID": "716049d016bcef894225",
+    "clientSecret": "32d5fe98987a84d91e9d1cdc56c2ff77ae5ca8c1",
     "pagerDirection": "first",
     "distractionFreeMode": true
   },
