@@ -22,8 +22,8 @@ const Footer = () => (
           </p>
           <p className="copyright">
             Copyright&nbsp;
-            <ExternalLink href="https://github.com/daylennguyen/" title="&copy; Daylen.dev | " />
-            &nbsp; &nbsp; &nbsp;
+            <ExternalLink href="https://daylen.dev" title="&copy; Daylen.dev" />
+            &nbsp;|&nbsp;
             {config.title}
             {new Date().getFullYear()}
           </p>
