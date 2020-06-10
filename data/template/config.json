@@ -17,9 +17,9 @@
   },
   "title": "Daylen | Photography, Code, People",
   "gitalk": {
-    "repo": "daylen.dev",
-    "admin": ["daylen"],
-    "owner": "daylen",
+    "repo": "daylen-gatsby-blog",
+    "admin": ["daylennguyen"],
+    "owner": "daylennguyen",
     "clientID": "5d5f8bd0f955dd47a6ca",
     "clientSecret": "9c5afaf380835358174d693df2f1c1297cc0bf6f",
     "pagerDirection": "first",
