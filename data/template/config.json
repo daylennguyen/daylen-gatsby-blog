@@ -17,7 +17,7 @@
   },
   "title": "Daylen | Photography, Code, People",
   "gitalk": {
-    "repo": "daylennguyen.github.io",
+    "repo": "daylen.dev",
     "admin": ["daylen"],
     "owner": "daylen",
     "clientID": "5d5f8bd0f955dd47a6ca",
