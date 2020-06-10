@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './index.scss';
 
-import JueJin from '../JueJin';
+// import JueJin from '../JueJin';
 
 import { parseImgur } from '../../api/images';
 
@@ -12,8 +12,6 @@ const Header = ({
   subTitle,
   authorImage,
   authorName,
-  jueJinPostLink,
-  jueJinLikeIconLink,
 }) => (
   <div className="col-12 header" style={{ padding: 0 }} id="header">
     <div
@@ -37,13 +35,6 @@ const Header = ({
             <span className="author-name">{authorName}</span>
           </div>
           <span className="text">{subTitle}</span>
-          {jueJinPostLink &&
-            jueJinLikeIconLink && (
-              <JueJin
-                jueJinPostLink={jueJinPostLink}
-                jueJinLikeIconLink={jueJinLikeIconLink}
-              />
-            )}
         </div>
       )}
     </div>
@@ -56,8 +47,8 @@ Header.propTypes = {
   subTitle: PropTypes.string,
   authorName: PropTypes.string,
   authorImage: PropTypes.string,
-  jueJinPostLink: PropTypes.string,
-  jueJinLikeIconLink: PropTypes.string,
+  // jueJinPostLink: PropTypes.string,
+  // jueJinLikeIconLink: PropTypes.string,
 };
 
 Header.defaultProps = {
@@ -65,8 +56,8 @@ Header.defaultProps = {
   subTitle: '',
   authorName: '',
   authorImage: '',
-  jueJinPostLink: '',
-  jueJinLikeIconLink: '',
+  // jueJinPostLink: '',
+  // jueJinLikeIconLink: '',
 };
 
 export default Header;
