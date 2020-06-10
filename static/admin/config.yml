@@ -3,17 +3,17 @@ backend:
   name: git-gateway
   # Branch to update (optional; defaults to master)
   branch: master
-
 # https://www.netlifycms.org/docs/configuration-options/#publish-mode
 publish_mode: editorial_workflow
-
-media_folder: static/assets
-public_folder: assets
-
 media_library:
   name: uploadcare
   config:
     publicKey: a3292aec24a411d2e2cf
+    tabs: file camera url facebook gdrive gphotos instagram flickr
+    effects: crop,rotate,mirror,enhance,sharp,blur,grayscale,invert
+    preview: true
+media_folder: static/assets
+public_folder: assets
 
 # https://www.netlifycms.org/docs/collection-types/
 collections:
