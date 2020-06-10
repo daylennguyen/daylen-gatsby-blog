@@ -31,11 +31,11 @@ const Card = ({
   <div className="col-sm-12 pb-4">
     <div className="custom-card">
       {headerImage && (
-        <CardHeader
-          url={url}
-          image={headerImage}
-          backgroundColor={headerBackgroundColor}
-        />
+      <CardHeader
+        url={url}
+        image={headerImage}
+        backgroundColor={headerBackgroundColor}
+      />
       )}
       <div className="data">
         <div className="content">
@@ -50,7 +50,7 @@ const Card = ({
           </Link>
           <p>{description}</p>
           <Link to={url} href={url}>
-            ....繼續閱讀全文內容
+            Read more `&rarr`
           </Link>
         </div>
       </div>
