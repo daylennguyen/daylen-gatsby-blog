@@ -1,12 +1,12 @@
 ---
-templateKey: blog-post
 id: https://daylen.dev/guestbook
-title: Guestbook
 slug: /guestbook
+title: Guestbook
 date: 2017-01-01T03:48:03.125Z
-description: ""
+description: this site implements gitalk for commenting on any post!
 tags:
-  - 閱讀
+  - General
+headerImage: https://i.imgur.com/xgUrAHk.jpeg
+templateKey: blog-post
 ---
-
-歡迎留言
+This is the guestbook! Leave some comments
