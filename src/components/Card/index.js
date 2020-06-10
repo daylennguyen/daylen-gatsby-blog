@@ -50,7 +50,7 @@ const Card = ({
           </Link>
           <p>{description}</p>
           <Link to={url} href={url}>
-            Read more `&rarr`
+            Read more &rarr
           </Link>
         </div>
       </div>
