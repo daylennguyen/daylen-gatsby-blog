@@ -12,8 +12,11 @@ media_library:
     tabs: file camera url facebook gdrive gphotos instagram flickr
     effects: crop,rotate,mirror,enhance,sharp,blur,grayscale,invert
     preview: true
-media_folder: static/assets
-public_folder: assets
+    # media_folder: static/assets
+    public_folder: assets
+  settings:
+    autoFilename: true
+    defaultOperations: '/resize/800x600/'
 
 # https://www.netlifycms.org/docs/collection-types/
 collections:
