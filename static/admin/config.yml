@@ -1,13 +1,21 @@
 backend:
+  # https://www.netlifycms.org/docs/git-gateway-backend/
   name: git-gateway
   # Branch to update (optional; defaults to master)
   branch: master
 
+# https://www.netlifycms.org/docs/configuration-options/#publish-mode
 publish_mode: editorial_workflow
+
 media_folder: static/assets
 public_folder: assets
-# https://www.netlifycms.org/docs/collection-types/
 
+media_library:
+  name: uploadcare
+  config:
+    publicKey: a3292aec24a411d2e2cf
+
+# https://www.netlifycms.org/docs/collection-types/
 collections:
   - name: "Configuration"
     label: "Configuration"
@@ -37,12 +45,6 @@ collections:
           - {
               label: "gaOptimizeId",
               name: "gaOptimizeId",
-              widget: "string",
-              required: false,
-            }
-          - {
-              label: "zhihuUsername",
-              name: "zhihuUsername",
               widget: "string",
               required: false,
             }
@@ -98,7 +100,7 @@ collections:
           label: "Slug",
           name: "slug",
           widget: "string",
-          hint: "不填寫的話，就用 yyy-mm-dd-title",
+          hint: "yyy-mm-dd-title",
           required: false,
         }
       - { label: "Title", name: "title", widget: "string" }
@@ -108,7 +110,7 @@ collections:
       - { label: "Header Image", name: "headerImage", widget: "string" }
       - {
           label: "Template Key",
-          hint: "如果你不知道是什麼模板的話，請輸入 blog-post",
+          hint: "blog-post",
           name: "templateKey",
           widget: "string",
           default: "blog-post",
