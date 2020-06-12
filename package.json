@@ -50,7 +50,8 @@
     "react-transition-group": "^2.5.2",
     "rimraf": "^2.6.2",
     "smooth-scroll": "^16.0.0",
-    "webpack": "^4.19.0"
+    "webpack": "^4.19.0",
+    "snyk": "^1.339.1"
   },
   "keywords": [
     "gatsby"
@@ -75,7 +76,9 @@
     "functions": "netlify-lambda serve functions",
     "reset": "rimraf pubilc/ .cache/",
     "commit": "npx git-cz",
-    "revert": "node ./scripts/revertConfig.js"
+    "revert": "node ./scripts/revertConfig.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -105,5 +108,6 @@
     "ignore": [
       "**/dist/*.min.js"
     ]
-  }
+  },
+  "snyk": true
 }
