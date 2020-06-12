@@ -13,15 +13,15 @@ installFontAwesome();
 
 const isLocalDevelopment = () => window && window.location && window.location.origin !== url;
 
-// if (isLocalDevelopment() === false) {
-ReactGA.initialize(gaTrackId);
+if (isLocalDevelopment() === false) {
+  ReactGA.initialize(gaTrackId);
 
-// Google Optimizer
-if (gaOptimizeId) {
-  ReactGA.ga('require', gaOptimizeId);
+  // Google Optimizer
+  if (gaOptimizeId) {
+    ReactGA.ga('require', gaOptimizeId);
+  }
+  console.log('Welcome to online environment.');
 }
-console.log('Welcome to online environment.');
-// }
 
 // Inspired by APlayer
 console.log(
