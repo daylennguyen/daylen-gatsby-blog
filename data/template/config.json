@@ -8,12 +8,12 @@
     "google_site_verification": "riZBcestky7i9xY__A-5J-2EE65T75X1u-zgbss37Io"
   },
   "name": "Daylen",
-  "about": "/2018/05/01/about-calpa-liu/",
+  "about": "/2018/05/01/about-daylen/",
   "email": "daylennguyen@gmail.com",
   "stats": {
     "image": "https://i.imgur.com/VjBWiSt.png",
-    "title": "過去三十日數據",
-    "description": "過去三十日數據"
+    "title": "30 day data",
+    "description": "read more"
   },
   "title": "Daylen | Photography, Code, People",
   "gitalk": {
@@ -45,13 +45,13 @@
       "title": "Tags"
     },
     {
-      "href": "/2018/05/01/about-calpa-liu/",
+      "href": "/2018/05/01/about-daylen/",
       "title": "About"
     }
   ],
   "redirectors": [
     {
-      "toPath": "/2018/05/01/about-calpa-liu/",
+      "toPath": "/2018/05/01/about-daylen/",
       "fromPath": "/about/"
     }
   ],

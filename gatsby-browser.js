@@ -13,19 +13,19 @@ installFontAwesome();
 
 const isLocalDevelopment = () => window && window.location && window.location.origin !== url;
 
-if (isLocalDevelopment() === false) {
-  ReactGA.initialize(gaTrackId);
+// if (isLocalDevelopment() === false) {
+ReactGA.initialize(gaTrackId);
 
-  // Google Optimizer
-  if (gaOptimizeId) {
-    ReactGA.ga('require', gaOptimizeId);
-  }
-  console.log('Welcome to online environment.');
+// Google Optimizer
+if (gaOptimizeId) {
+  ReactGA.ga('require', gaOptimizeId);
 }
+console.log('Welcome to online environment.');
+// }
 
 // Inspired by APlayer
 console.log(
-  `${'\n'} %c CALPA %c https://calpa.me ${'\n'}${'\n'}`,
+  `${'\n'} %c FLAN %c https://daylen.dev ${'\n'}${'\n'}`,
   'color: #6cf; background: #030307; padding:5px 0;',
   'background: #6cf; padding:5px 0;',
 );

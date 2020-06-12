@@ -25,6 +25,7 @@ const Footer = () => (
             <ExternalLink href="https://daylen.dev" title="&copy; Daylen.dev" />
             &nbsp;|&nbsp;
             {config.title}
+            &nbsp;
             {new Date().getFullYear()}
           </p>
         </div>

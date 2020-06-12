@@ -45,7 +45,7 @@ const Navbar = () => (
         <FontAwesomeIcon icon={faBars} />
       </button>
       {/* TODO: CHANGE TO PERSONAL GITHUB  */}
-      <GithubCorner url="https://github.com/calpa/gatsby-starter-calpa-blog" />
+      <GithubCorner url="https://github.com/daylennguyen/daylen-gatsby-blog" />
       <div
         className="collapse navbar-collapse flex-row-reverse"
         id="navbarSupportedContent"
