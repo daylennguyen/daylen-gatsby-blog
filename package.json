@@ -51,7 +51,7 @@
     "rimraf": "^2.6.2",
     "smooth-scroll": "^16.0.0",
     "webpack": "^4.19.0",
-    "snyk": "^1.339.1"
+    "snyk": "^1.339.2"
   },
   "keywords": [
     "gatsby"
